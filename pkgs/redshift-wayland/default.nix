@@ -21,11 +21,6 @@ stdenv.mkDerivation rec {
     sha256 = metadata.sha256;
   };
 
-  patches = [
-    # https://github.com/jonls/redshift/pull/575
-    ./575.patch
-  ];
-
   nativeBuildInputs = [
     autoconf
     automake
